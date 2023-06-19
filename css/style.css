@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+body {
+  font-family: "Sora", sans-serif;
+}
+.button-play {
+  font-size: 22px;
+  background: rgb(255, 0, 0);
+  border: none;
+  padding: 10px;
+  border-radius: 0 0 25px 0;
+}
+.home {
+  background-image: url(/img/1685152342_fons-pibig-info-p-fon-serdtsa-vkontakte-12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 25px;
+  padding-bottom: 20%;
+  position: relative;
+}
+.home__body {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+.home__title {
+  font-size: 50px;
+  color: aliceblue;
+  margin-bottom: 40px;
+}
+.home__text {
+  font-size: 45px;
+  font-weight: 600;
+  max-width: 750px;
+
+  background: linear-gradient(to right, #eae5c9, #6cc6cb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home__button {
+  max-width: 30px;
+  height: auto;
+}
+.home__button img {
+  max-width: 30px;
+}
+.home__gif {
+  display: none;
+}
+.home__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.home__column {
+  margin-left: -35px;
+  max-width: 400px;
+  height: auto;
+}
+.home__column img {
+  object-fit: cover;
+}
+
+.home__surprise:hover > .home__gif {
+  cursor: pointer;
+  display: block;
+}
+.home__gif {
+  overflow: auto;
+  margin: 0 -25px;
+}
+@media (max-width: 890px) {
+  .home__body {
+    padding-top: 35px;
+  }
+  .home__column img {
+    width: 100%;
+    height: 100%;
+  }
+  .home__column {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .home__title {
+    font-size: 30px;
+    color: aliceblue;
+    margin-bottom: 20px;
+  }
+  .home__text {
+    font-size: 27px;
+    font-weight: 600;
+    max-width: auto;
+  }
+}
+@media (max-width: 525px) {
+  .home__title {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 100%;
+    margin-bottom: 15px;
+  }
+  .home__text {
+    font-size: 19px;
+  }
+}
+@media (max-width: 375px) {
+  .home__title {
+    font-weight: 500;
+    font-size: 19px;
+  }
+  .home__text {
+    font-size: 14px;
+  }
+}
+#background-music {
+  display: none;
+}

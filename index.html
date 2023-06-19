@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My girl</title>
+  </head>
+  <body>
+    <section class="home">
+      <audio id="background-music" src="src/ce9282c318f4.mp3" loop></audio>
+      <button class="button-play" id="play-button">
+        Прежде всего жми сюда!
+      </button>
+      <div class="container">
+        <div class="home__body">
+          <h1 class="home__title">
+            Для меня не свойственно писать стихи, <br />
+            но ради Фатимы я постарался :)
+          </h1>
+          <div class="home__text">
+            Звонки длинные, с ночи до утра <br />
+            Она вся тянула и тянула встречу <br />
+            Но как услышав мы друг друга, забывали, <br />
+            Что нам пора <br />
+            Пора нам обниматься, держаться за ручки, целоваться <br />
+            Что нужна нам встреча <br />
+            Встреча что могла изменить <br />
+            Изменить меня и ее <br />
+            Изменить наше будущее может быть <br />
+            Но и без нее мы держимся <br />
+            Красиво общаемся,<br />
+            За дело не принимаемся <br />
+            Так не заметили <br />
+            Что пришло уже пора выбираться <br />
+            Либо все, либо ничего <br />
+            Не смог я выбрать "ничего" <br />
+            А "все" выбрать тяжело <br />
+            Страх.. <br />
+            Страх неизвестности <br />
+            Неизвестность пожирала меня
+          </div>
+        </div>
+        <div class="home__surprise">
+          <button class="home__button">
+            <img src="img/giphy.gif" alt="" />
+          </button>
+          <div class="home__gif">
+            <div class="home__columns">
+              <div class="home__column">
+                <img
+                  src="img/Видео WhatsApp 2023-06-10 в 03.19.52.gif"
+                  alt=""
+                />
+              </div>
+              <div class="home__column">
+                <img
+                  src="img/Видео WhatsApp 2023-06-10 в 03.19.30.gif"
+                  alt=""
+                />
+              </div>
+              <div class="home__column">
+                <img
+                  src="img/Видео WhatsApp 2023-06-10 в 03.19.46.gif"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var audio = document.getElementById("background-music");
+      var playButton = document.getElementById("play-button");
+
+      playButton.addEventListener("click", function () {
+        audio.play();
+        playButton.style.display = "none"; // Скрыть кнопку после воспроизведения
+      });
+    </script>
+  </body>
+</html>
